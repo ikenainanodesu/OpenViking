@@ -117,6 +117,7 @@ test = [
   "redis>=5.3.1,<7",
   "pytest>=7.0.0",
   "pytest-asyncio>=0.21.0",
+  "fakeredis[lua]>=2.23",
   "pytest-xdist>=3.5.0",
   "boto3>=1.42.44",
   "pytest-cov>=4.0.0",
@@ -256,6 +257,10 @@ openviking = [
     "lib/ragfs_python*.pyd",
     "bin/ov",
     "bin/ov.exe",
+    "server/account_stores/sql/*.sql",
+    "server/account_stores/sql/changes/*.sql",
+    "service/sql/*.sql",
+    "service/sql/changes/*.sql",
     "storage/vectordb/engine/*.abi3.so",
     "storage/vectordb/engine/*.pyd",
 ]
